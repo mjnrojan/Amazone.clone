@@ -471,3 +471,99 @@ body{
     top: 5px;
     padding-right: px;
 }
+
+/* ****************************************Navigation******************************************** */
+.nav-main{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: #232f3e;
+    padding-left: 11px;
+    padding-top: 0;
+    color: #fff;
+    
+    /* transform: translate3d(0, 0, 0);
+    z-index: 4;
+    background-position: 0 -725px; */
+}
+
+.nav-main .nav-left{
+    margin-right: 0;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 8px 9px 8px 9px;
+    margin: 0;
+    color: #fff;
+}
+
+.hamburger-menu{
+    
+    width: 17px;
+    height: 18px;
+}
+
+.menu-label{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 5px;
+    white-space: nowrap;
+}
+
+
+/* ********fillll**********8 */
+
+.nav-fill {
+    max-height: 40px;
+    width: auto;
+}
+
+.xshop-container{
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column nowrap;
+    padding: 0;
+}
+
+.nav-xshop{
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    align-items: flex-end;
+}
+
+.nav-ul{
+    display: contents;
+    padding: 0;
+    margin: 0 0 0 18px;
+}
+
+.nav-li{
+    list-style-type: none;
+}
+
+.nav-div{
+    display: inline-block;
+    padding: 0 5px;
+    position: relative;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.nav-div .nav-a{
+    margin: 5px 0 6px 0;
+    padding: 8px 5px;
+    scroll-margin: 0;
+    height: 12px;
+    box-sizing: content-box;
+    color: #fff;
+    font-size: 12px;
+}
