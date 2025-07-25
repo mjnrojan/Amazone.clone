@@ -13,7 +13,7 @@ body{
 
 .header{
     background: #0f1111;
-    height: 60px;
+    height: 59px;
 }
 
 /* <----------layout----------> */
@@ -70,6 +70,8 @@ body{
 .border-white{
     
     border: 1px solid transparent;
+    border-radius: 2px;
+    transition: border 0.2s ease;
 }
 .border-white:hover{
     border: 1px solid #fff;
@@ -81,9 +83,7 @@ body{
 .nav-locaion{
     display: flex;
     margin-left: 2px;
-    /* align-content: center;
-    align-items: center;
-    justify-content: center; */
+   
 }
 
 .nav-a{
@@ -495,13 +495,14 @@ body{
     display: flex;
     align-items: center;
     width: auto;
-    height: auto;
+    height: 100%;
     border: none;
-    border-radius: 3px;
     text-decoration: none;
-    padding: 8px 9px 8px 9px;
+    padding: 7px 8px 7px 8px;
     margin: 0;
     color: #fff;
+    flex-shrink: 0;
+    box-sizing: border-box;
 }
 
 .hamburger-menu{
@@ -523,7 +524,7 @@ body{
 
 .nav-fill {
     max-height: 40px;
-    width: auto;
+    max-width: 1000px;
 }
 
 .xshop-container{
@@ -559,11 +560,20 @@ body{
 }
 
 .nav-div .nav-a{
-    margin: 5px 0 6px 0;
-    padding: 8px 5px;
+    margin: 1px 0 0px 0;
+    padding: 13px 5px 12px 5px;
     scroll-margin: 0;
-    height: 12px;
+    height: 100%;
+    line-height: 1;
     box-sizing: content-box;
     color: #fff;
     font-size: 12px;
 }
+
+.nav-main .nav-right{
+    display: flex;
+    height: 100%;
+    width: 40px;
+}
+
+nav-swimslot
