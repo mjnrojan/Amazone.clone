@@ -49,9 +49,9 @@ body{
 .logo-link{
     display: inline-block;
     margin: 1px;
-    padding: 1px 8px 0 6px;
+    padding: 1px 5px 0 3px;
     text-decoration: none;
-    flex-shrink: none;
+   
     height: 50px;
     width: 100%;
     /* pointer-events: none; */
@@ -661,4 +661,139 @@ body{
 
 /* .slider-container a:hover {
     background: rgba(255, 255, 255, 0.8);
+} */
+
+
+
+/* **************Product cards container*************** */
+.main{
+    position: relative;
+    top: -380px;
+    margin-left:10px ;
+    margin-right:10px ;
+    z-index: 10;
+}
+
+
+.card-product-container{
+    /* max-width: 400px; */
+    /* display: block; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0 10px 0;
+    
+}
+.card-product-multiple {
+    margin: 0 10px;;
+    padding: 20px 0 15px 0;
+    background-color: white; /* or any light tone */
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    max-height: 380px;
+    max-width: 312.5px;
+}
+/* .card-product-multiple:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+    transition: 0.2s ease-in-out;
+} */
+.card-header{
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+.card-product-multiple h2{
+    margin: 0;
+    
+    text-align: left;
+    font-size: 19.5px;
+}
+.card-footer{
+    position: relative;
+    top: -20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.card-product-multiple a{
+    text-decoration: none;
+    color:#2162a1 ;
+    font-size:13px ;
+}
+
+
+.card-product-nested-card{
+    padding: 0 20px;
+    height: auto;
+    margin-bottom: 40px;
+    font-size: 1px;
+    /* line-height: 10px; */
+}
+.first-row{
+    margin-bottom: 10px;
+}
+.first-row,
+.sec-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+    flex-wrap: wrap;
+    height: 100%; /* allow content to determine height */
+    
+}
+.card-nested {
+    width: 48%; /* fits 2 items per row with spacing */
+    /* height: 70%; */
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.card-nested a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.card-nested a p{ 
+    font-size: 11px;
+    /* line-height: 2px; */
+
+}
+
+.card-nested img {
+    width: 100%;
+    height: 100px;
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+
+/* ***top deals**** */
+.top_deals_container{
+    padding: 10px 20px 10px 20px;
+    margin:  10px;
+    background: #fff;
+    overflow-y: hidden;
+    min-height: 290px;
+}
+.top_deals_heading{
+    margin-top: 10px;
+}
+.top_product_container{
+    /* background: red; */
+    height: 220px;
+    align-content: center;
+}
+.top_product_list{
+    display: flex;
+    
+}
+/* .top_product_item{
+    width: 60px;
+} */
+
+.top_product_item{
+    width: 100%;
+    padding: 0 10px;
+}
+
+/* .top_product_item img{
+    height: 100%;
 } */
