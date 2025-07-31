@@ -401,8 +401,6 @@ body{
     
 }
 
-
-
 .nav-order{
     margin: 2px;
 }
@@ -489,13 +487,15 @@ body{
 
 .nav-main .nav-left{
     margin-right: 0;
+    
+    height: 39px;
 }
 
 .menu{
     display: flex;
     align-items: center;
     width: auto;
-    height: 100%;
+    
     border: none;
     text-decoration: none;
     padding: 7px 8px 7px 8px;
@@ -518,6 +518,8 @@ body{
     padding-left: 5px;
     white-space: nowrap;
 }
+
+
 
 
 /* ********fillll**********8 */
@@ -560,14 +562,17 @@ body{
 }
 
 .nav-div .nav-a{
-    margin: 1px 0 0px 0;
-    padding: 13px 5px 12px 5px;
+    margin: 2px 0 0px 0;
+    padding: 9px 5px 11px 5px;
+    /* margin: 1px;
+    padding: 6px 0; */
     scroll-margin: 0;
     height: 100%;
     line-height: 1;
     box-sizing: content-box;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .nav-main .nav-right{
@@ -576,4 +581,84 @@ body{
     width: 40px;
 }
 
-nav-swimslot
+/* Image slider container */
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+/* Wrapper for the list */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* The image list as a horizontal scroll */
+.img-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+.img-item.active {
+    display: block;
+    z-index: 1;
+}
+
+.fade {
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.3; }
+    to { opacity: 1; }
+}
+
+
+/* Image styling */
+.slider-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, #000000 60%, transparent 100%);
+}
+
+/* Navigation arrows */
+.slider-container a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4vw; 
+    height: 250px;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+
+.ctrl-prev {
+    left: 0;
+}
+
+.ctrl-next {
+    right: 0;
+}
+
+/* .slider-container a:hover {
+    background: rgba(255, 255, 255, 0.8);
+} */
