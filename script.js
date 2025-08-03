@@ -48,3 +48,5 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlide(current);
     startAutoplay();
 });
+
+
