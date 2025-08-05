@@ -1,3 +1,124 @@
-.left-side{
-    width: 20%;
+body{
+    background: #fff;
+    /* margin: 0 20px; */
+    
 }
+.result-infobar{
+    max-height: fit-content;
+    margin-bottom: 20px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(86,89,89);
+    box-shadow: 0px 4px 6px rgba(86,89,89 0.1);
+    font-size: 14px;
+}
+.result-infobar span{
+    color: rgb(209, 73, 0);
+}
+
+.sort-by{
+    border: 1px solid rgb(86,89,89);
+    border-radius: 10px;
+    padding:3px 5px;
+    margin-right: 5px;
+    
+}
+.sort-by a{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(86,89,89);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.sort-by a i{
+    font-size: 16px;
+}
+.result-infobar p{
+    margin: 8px 0 ;
+}
+.content{
+    display: flex;
+    margin: 0 5px;
+    padding-top: 15px;
+}
+.left-side{
+    width: 15%;
+    max-height: 100%;
+    padding-right: 14px;
+}
+.right-side{
+    width: 85%;
+    height: 100%;
+}
+.h-line{
+    padding: 1px;
+    border: 1px solid #d5d9d9 ;
+    border-top-width: 0;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+/* *******filter section******* */
+.filter-sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.filtersection{
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+.filtersection p{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+.filtersection a{
+    text-decoration: none;
+    color:#0F1111 ;
+    font-size: 13px;
+}
+.filtersection a:hover{
+    text-decoration: underline;
+    color: rgb(209, 73, 0);
+}
+.filter-options{
+    display: flex;
+    flex-direction: column;
+}
+
+.star{
+    display: flex;
+    align-items: center;
+}
+
+/* *************product card*************** */
+.display-row{
+    width: 100%;
+    max-height: 470;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.product-card{
+    max-width: 230px;
+    line-height: 20px;
+    text-align: left;
+    padding: 0 5px;
+}
+.image-container{
+    padding: 0 8px;
+    margin-bottom: 8px;
+    /* background-color: #d5d9d9; */
+}
+
