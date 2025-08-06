@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgb(86,89,89);
+    /* border-bottom: 1px solid rgb(86,89,89); */
     box-shadow: 0px 4px 6px rgba(86,89,89 0.1);
     font-size: 14px;
 }
@@ -23,6 +23,8 @@ body{
     border-radius: 10px;
     padding:3px 5px;
     margin-right: 5px;
+    display: flex;
+    justify-content: flex-end;
     
 }
 .sort-by a{
@@ -51,7 +53,7 @@ body{
     padding-right: 14px;
 }
 .right-side{
-    width: 85%;
+    width: 90%;
     height: 100%;
 }
 .h-line{
@@ -87,7 +89,7 @@ body{
     color:#0F1111 ;
     font-size: 13px;
 }
-.filtersection a:hover{
+a:hover{
     text-decoration: underline;
     color: rgb(209, 73, 0);
 }
@@ -100,11 +102,24 @@ body{
     display: flex;
     align-items: center;
 }
+.top-text{
+    margin-right: 10px;
+    padding: 5px 0;
+}
+.top-text h2{
+    font-size: 16px;
+    
+}
+.top-text p{
+    color: #9d9e9e;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
 
 /* *************product card*************** */
 .display-row{
     width: 100%;
-    max-height: 470;
+    max-height: 600px;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -114,11 +129,57 @@ body{
     max-width: 230px;
     line-height: 20px;
     text-align: left;
-    padding: 0 5px;
+    margin: 0 5px;
+    margin-bottom: 10px;
+    box-shadow: 5px 0px 5px rgba(0,0,0,0.1),0px 5px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 .image-container{
     padding: 0 8px;
     margin-bottom: 8px;
     /* background-color: #d5d9d9; */
 }
+.product-details{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.card-rating{
+    display: flex;
+    align-content: center;
+    gap: 10px;
+}
+.card-rating-count{
+    font-size: 12px;
+    color: #007185;
+}
+.card-rating-count:hover{
+    text-decoration: underline;
+}
+.card-title{
+    margin-bottom: 10px;
+    
+}
+.purchase-info{
+    margin-bottom: 10px;
+    color: #9d9e9e;
+    font-size: 13px;
+}
+.card-price{
 
+}
+.action-btn{
+    width: 45%;
+    margin:10px 0;
+    
+    border-radius: 15px;
+    border: 1px solid rgb(86,89,89);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.action-btn a{
+    text-decoration: none;
+    color: #0F1111;
+}
